@@ -1,0 +1,10 @@
+/*! Catch2022 v1.0.0 | (c) 2020  | MIT License | git@github.com:Catch2022/Catch2022-Website */
+/* line 4, src/sass/nav.scss */
+#main-nav {
+  background-color: #DBEFF7;
+}
+
+/* line 8, src/sass/nav.scss */
+#navbar-title {
+  opacity: 0;
+}
