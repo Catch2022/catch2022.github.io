@@ -2,7 +2,18 @@
 <html>
   <head>
     <title>Catch 2022</title>
-    <link
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<style>
+		h1,h2,p{
+			font-family: 'Press Start 2P', cursive;
+		}
+
+	</style>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
@@ -18,6 +29,7 @@
         crossorigin="anonymous"
     />
     <link href="./custom-bootstrap-override.css" rel="stylesheet">
+
   </head>
   <body id="page">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
@@ -52,8 +64,14 @@
         </div>
         <div id="demo-wrapper" class="subwrapper">
             <h2>Video Demo</h2>
+            <video controls>
+              <source src="videotest.mp4" type="video/mp4">
+            </video>
             <p id="video">Video</p>
-            <span id="dl-btn">Download (Windows)</span>
+            <a href="videotest.mp4" download>
+              Download
+            </a>
+            <p id="dl-btn">Download (Windows)</p>
         </div>
         <div id="about-wrapper" class="subwrapper">
             <h2>About</h2>
@@ -70,18 +88,72 @@
             </div>
         </div>
         <div id="team-wrapper" class="subwrapper">
-            <h2>Team</h2>
-            <div id="team">
-                <p>User 1</p>
-                <p>User 2</p>
-                <p>User 3</p>
-                <p>User 4</p>
-                <p>User 5</p>
+
+		<!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Team</h2>
+          <h3 class="section-subheading text-muted">Shoot and avoid infinitely!</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="team-member">
+            <img style="height: 180px; width: 120px;"  src="Martin.jpg" alt="">
+            <h4>Martin Falke</h4>
+            <p class="text-muted">Project leader</p>
+			<class="actions">
+			<i><a href="https://github.com/martinfalke" class="fab fa-github"><span class="label"></span></a></i>
+		
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div style="margin-left: -35px;" class="team-member">
+            <img style="height: 180px; width: 120px;"  src="Boning.png" alt="">
+            <h4>Boning Li</h4>
+            <p class="text-muted">XXXXX</p>
+			<class="actions">
+			<i><a href="https://github.com/Boningli23" class="fab fa-github"><span class="label"></span></a></i>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="team-member">
+            <img style="height: 180px; width: 120px;"  src="Edvin.jpg" alt="">
+            <h4>Edvin von Platen</h4>
+            <p class="text-muted">XXXXXX</p>
+			<class="actions">
+			<i><a href="https://github.com/edvinvp" class="fab fa-github"><span class="label"></span></a></i>
+          </div>
+        </div>
+        <div style="margin-left: 20px;" class="col-sm-2">
+          <div class="team-member">
+            <img style="height: 180px; width: 120px;"  src="Elena.jpg" alt="">
+            <h4 style="margin-left: 20px;" >Elena Palombini</h4>
+            <p style="margin-left: 20px;" class="text-muted">XXXXX</p>
+			<class="actions">
+			<i><a href="https://github.com/elenapalombini" class="fab fa-github"><span class="label"></span></a></i>
+          </div>
+        </div>
+        <div style="margin-left: -20px;" class="col-sm-3">
+          <div class="team-member">
+            <img style="height: 180px; width: 120px;"  src="Marius.jpg" alt="">
+            <h4>Marius Lelouard</h4>
+            <p class="text-muted">XXXXX</p>
+			<class="actions">
+			<i><a href="https://github.com/MariusLelouard" class="fab fa-github"><span class="label"></span></a></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
             </div>
         </div>
     </div>
 
     <!-- Scripts -->
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- bootstrap -->

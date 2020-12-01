@@ -9,19 +9,19 @@
   opacity: 0;
 }
 
-/* line 4, src/sass/main.scss */
+/* line 3, src/sass/main.scss */
 html {
   scroll-behavior: smooth;
 }
 
-/* line 8, src/sass/main.scss */
+/* line 7, src/sass/main.scss */
 *, *:after, *:before {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 14, src/sass/main.scss */
+/* line 13, src/sass/main.scss */
 body {
   min-height: 100vh;
   margin: 0;
@@ -29,7 +29,7 @@ body {
   font-size: 1em;
 }
 
-/* line 21, src/sass/main.scss */
+/* line 20, src/sass/main.scss */
 #root-wrapper {
   background-color: #DBEFF7;
   color: #456875;
@@ -40,7 +40,7 @@ body {
 }
 
 @media only screen and (min-width: 701px) {
-  /* line 21, src/sass/main.scss */
+  /* line 20, src/sass/main.scss */
   #root-wrapper {
     grid-template-columns: 1fr 96vw 1fr;
     grid-template-rows: auto 100vh auto auto auto;
@@ -48,19 +48,19 @@ body {
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 21, src/sass/main.scss */
+  /* line 20, src/sass/main.scss */
   #root-wrapper {
     grid-template: auto 100vh auto auto auto / 1fr 96vw 1fr;
   }
 }
 
-/* line 41, src/sass/main.scss */
+/* line 40, src/sass/main.scss */
 .subwrapper {
   padding: 92px 0px 48px 0px;
   margin-top: -44px;
 }
 
-/* line 46, src/sass/main.scss */
+/* line 45, src/sass/main.scss */
 #splash-wrapper {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
@@ -80,25 +80,25 @@ body {
   text-align: center;
 }
 
-/* line 56, src/sass/main.scss */
+/* line 55, src/sass/main.scss */
 #demo-wrapper {
   grid-row: -4 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 61, src/sass/main.scss */
+/* line 60, src/sass/main.scss */
 #about-wrapper {
   grid-row: -3 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 66, src/sass/main.scss */
+/* line 65, src/sass/main.scss */
 #screenshots-wrapper {
   grid-row: -2 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 69, src/sass/main.scss */
+/* line 68, src/sass/main.scss */
 #screenshots-wrapper #screenshots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,7 +110,7 @@ body {
           flex-flow: row nowrap;
 }
 
-/* line 74, src/sass/main.scss */
+/* line 73, src/sass/main.scss */
 #screenshots-wrapper #screenshots .screenshot {
   margin-right: 10px;
   border: 1px solid black;
@@ -119,7 +119,7 @@ body {
   background-color: #5eb7db;
 }
 
-/* line 85, src/sass/main.scss */
+/* line 84, src/sass/main.scss */
 #team-wrapper {
   grid-row: -1 / span 1;
   grid-column: 2 / span 1;
@@ -132,7 +132,7 @@ body {
           flex-direction: column;
 }
 
-/* line 90, src/sass/main.scss */
+/* line 89, src/sass/main.scss */
 #team-wrapper #team {
   display: -webkit-box;
   display: -ms-flexbox;
