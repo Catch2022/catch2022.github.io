@@ -1,10 +1,219 @@
 /*! Catch2022 v1.0.0 | (c) 2020  | MIT License | git@github.com:Catch2022/Catch2022-Website */
-/* line 4, src/sass/nav.scss */
-#main-nav {
-  background-color: #DBEFF7;
+/* line 4, src/sass/variables.scss */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
 }
 
-/* line 8, src/sass/nav.scss */
+/* line 10, src/sass/variables.scss */
+.demo-wrapper {
+  margin-bottom: 3rem;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+/* Carousel base class */
+/* line 17, src/sass/variables.scss */
+.carousel {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  margin-left: 18rem;
+  width: 80rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+/* line 24, src/sass/variables.scss */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 30, src/sass/variables.scss */
+.carousel-item {
+  height: 32rem;
+}
+
+/* line 33, src/sass/variables.scss */
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+}
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+/* line 45, src/sass/variables.scss */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* line 49, src/sass/variables.scss */
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* line 52, src/sass/variables.scss */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes
+  ------------------------- */
+/* line 61, src/sass/variables.scss */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* line 66, src/sass/variables.scss */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  /* line 78, src/sass/variables.scss */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  /* line 84, src/sass/variables.scss */
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  /* line 90, src/sass/variables.scss */
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* line 4, src/sass/variables.scss */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* line 10, src/sass/variables.scss */
+.demo-wrapper {
+  margin-bottom: 3rem;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+/* Carousel base class */
+/* line 17, src/sass/variables.scss */
+.carousel {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  margin-left: 18rem;
+  width: 80rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+/* line 24, src/sass/variables.scss */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 30, src/sass/variables.scss */
+.carousel-item {
+  height: 32rem;
+}
+
+/* line 33, src/sass/variables.scss */
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+}
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+/* line 45, src/sass/variables.scss */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* line 49, src/sass/variables.scss */
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* line 52, src/sass/variables.scss */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes
+  ------------------------- */
+/* line 61, src/sass/variables.scss */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* line 66, src/sass/variables.scss */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  /* line 78, src/sass/variables.scss */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  /* line 84, src/sass/variables.scss */
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  /* line 90, src/sass/variables.scss */
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+/* line 4, src/sass/nav.scss */
+#main-nav {
+  background-color: #000000;
+  background-image: url("../copy/repeated-square-dark.png");
+}
+
+/* line 9, src/sass/nav.scss */
 #navbar-title {
   opacity: 0;
 }
@@ -31,8 +240,8 @@ body {
 
 /* line 20, src/sass/main.scss */
 #root-wrapper {
-  background-color: #DBEFF7;
-  color: #456875;
+  background-color: #000000;
+  color: #c115d8;
   -webkit-font-smoothing: antialiased;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
@@ -82,23 +291,35 @@ body {
 
 /* line 55, src/sass/main.scss */
 #demo-wrapper {
+  margin-bottom: 10rem;
   grid-row: -4 / span 1;
   grid-column: 2 / span 1;
 }
 
 /* line 60, src/sass/main.scss */
+.Download {
+  margin-bottom: 10rem;
+}
+
+/* line 63, src/sass/main.scss */
 #about-wrapper {
   grid-row: -3 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 65, src/sass/main.scss */
+/* line 68, src/sass/main.scss */
+#download-wrapper {
+  grid-row: -3 / span 1;
+  grid-column: 2 / span 1;
+}
+
+/* line 73, src/sass/main.scss */
 #screenshots-wrapper {
   grid-row: -2 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 68, src/sass/main.scss */
+/* line 76, src/sass/main.scss */
 #screenshots-wrapper #screenshots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -110,16 +331,16 @@ body {
           flex-flow: row nowrap;
 }
 
-/* line 73, src/sass/main.scss */
+/* line 81, src/sass/main.scss */
 #screenshots-wrapper #screenshots .screenshot {
   margin-right: 10px;
   border: 1px solid black;
   height: 20vh;
   width: 700px;
-  background-color: #5eb7db;
+  background-color: black;
 }
 
-/* line 84, src/sass/main.scss */
+/* line 92, src/sass/main.scss */
 #team-wrapper {
   grid-row: -1 / span 1;
   grid-column: 2 / span 1;
@@ -132,7 +353,7 @@ body {
           flex-direction: column;
 }
 
-/* line 89, src/sass/main.scss */
+/* line 97, src/sass/main.scss */
 #team-wrapper #team {
   display: -webkit-box;
   display: -ms-flexbox;

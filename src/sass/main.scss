@@ -53,11 +53,19 @@ body{
 }
 
 #demo-wrapper{
+    margin-bottom: 10rem;
     grid-row: -4 / span 1;
     grid-column: 2 / span 1;
 }
-
+        .Download{
+            margin-bottom: 10rem;
+        }
 #about-wrapper{
+    grid-row: -3 / span 1;
+    grid-column: 2 / span 1;
+}
+
+#download-wrapper{
     grid-row: -3 / span 1;
     grid-column: 2 / span 1;
 }

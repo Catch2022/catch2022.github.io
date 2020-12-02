@@ -1,1 +1,104 @@
 /*! Catch2022 v1.0.0 | (c) 2020  | MIT License | git@github.com:Catch2022/Catch2022-Website */
+/* line 4, src/sass/variables.scss */
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+/* line 10, src/sass/variables.scss */
+.demo-wrapper {
+  margin-bottom: 3rem;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+/* Carousel base class */
+/* line 17, src/sass/variables.scss */
+.carousel {
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+  margin-left: 18rem;
+  width: 80rem;
+}
+
+/* Since positioning the image, we need to help out the caption */
+/* line 24, src/sass/variables.scss */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+/* line 30, src/sass/variables.scss */
+.carousel-item {
+  height: 32rem;
+}
+
+/* line 33, src/sass/variables.scss */
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 40rem;
+}
+
+/* MARKETING CONTENT
+  -------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+/* line 45, src/sass/variables.scss */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* line 49, src/sass/variables.scss */
+.marketing h2 {
+  font-weight: 400;
+}
+
+/* line 52, src/sass/variables.scss */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+
+/* Featurettes
+  ------------------------- */
+/* line 61, src/sass/variables.scss */
+.featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+/* line 66, src/sass/variables.scss */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -.05rem;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  /* line 78, src/sass/variables.scss */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  /* line 84, src/sass/variables.scss */
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  /* line 90, src/sass/variables.scss */
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
