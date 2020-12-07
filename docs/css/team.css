@@ -1,0 +1,56 @@
+/*! Catch2022 v1.0.0 | (c) 2020  | MIT License | git@github.com:Catch2022/Catch2022-Website */
+/* line 4, src/sass/team.scss */
+#team-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 25%;
+}
+
+/* line 9, src/sass/team.scss */
+#team-container .team-member {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
+  margin: 0 4px 12px;
+}
+
+/* line 16, src/sass/team.scss */
+#team-container .team-member .member-pic {
+  border-radius: 2.5rem;
+}
+
+/* line 19, src/sass/team.scss */
+#team-container .team-member .member-name {
+  color: #c115d8;
+  margin-bottom: 6px;
+}
+
+/* line 23, src/sass/team.scss */
+#team-container .team-member .member-title {
+  color: #00D99E;
+  margin-top: 4px;
+}
+
+/* line 28, src/sass/team.scss */
+#team-container .team-member i > a {
+  color: #777;
+}
+
+/* line 31, src/sass/team.scss */
+#team-container .team-member i > a:hover {
+  color: #c4c4c4;
+  text-decoration: none;
+}

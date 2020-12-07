@@ -1,10 +1,26 @@
 
 
-
-.navbar-light .navbar-brand {
-    color: #456875;
+#navbar-title {
+    color: #00D99E !important;
+    font-size: 1.5rem;
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: #456875;
+#navbar-title:hover {
+    color: #9ce9d4 !important;
+}
+
+.navbar-toggler {
+    color: #c115d8 !important;
+}
+
+.navbar-toggler:hover{
+    color: #e17cee !important;
+}
+
+.nav-link {
+    color: #c115d8 !important;    
+}
+
+.nav-link:hover {
+    color: #e17cee !important;
 }

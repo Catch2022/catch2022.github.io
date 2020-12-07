@@ -2,10 +2,21 @@
 
 
 #main-nav{
-    background-color: $bg-color;
-    background-image: url("../copy/repeated-square-dark.png");
+    //background-color: $bg-color;
+    background-image: "../repeated-square-dark.png";
+    
 }
 
 #navbar-title {
     opacity: 0;
+    padding: 5px 12px;
+}
+
+.nav-item {
+    padding: 0 4px;
+}
+.nav-item, #navbar-title {
+    background-color: rgba(16, 16, 16, 0.7);
+    margin: 0 2px;
+    border-radius: 8px;
 }

@@ -4,35 +4,25 @@
     <title>Catch 2022</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-	<style type="text/css">
-		h1,h2,h4,p,a{
-			font-family: 'Press Start 2P', cursive;
-    }
-    .subwrapper{
-      background-image: url("./repeated-square-dark.png");
-      width: 100%;
-      height:auto;
-    }
-    
-	</style>
-    <link rel="stylesheet" href="css/font-awesome.min.css">    <link
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-        crossorigin="anonymous"
-    />
-    <link href="./custom-bootstrap-override.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+  />
+  <link href="./custom-bootstrap-override.css" rel="stylesheet">
 
   </head>
-  <body id="page">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="main-nav">
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="main-nav">
         <div class="container">
-          <a id="navbar-title" class="navbar-brand js-scroll-trigger" href="#page">Catch 2022</a>
+          <a id="navbar-title" class="navbar-brand js-scroll-trigger" href="#splash">Catch 2022</a>
           <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
@@ -40,19 +30,19 @@
           <div class="navbar-collapse collapse" id="navbarResponsive" style="">
             <ul class="navbar-nav text-uppercase ml-auto">
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#demo-wrapper">Demo</a>
+                <a class="nav-link js-scroll-trigger" href="#demo">Demo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#download-wrapper">Download</a>
+                <a class="nav-link js-scroll-trigger" href="#download">Download</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#about-wrapper">About</a>
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#screenshots-wrapper">Screenshots</a>
+                <a class="nav-link js-scroll-trigger" href="#screenshots">Screenshots</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#team-wrapper">Team</a>
+                <a class="nav-link js-scroll-trigger" href="#team">Team</a>
               </li>
             </ul>
           </div>
@@ -60,149 +50,157 @@
       </nav>
   
     <div id="root-wrapper">
-        <div id="splash-wrapper" class="subwrapper">
+        <!-- Splash/wallpaper -->
+        <div id="splash" class="subwrapper">
             <h1>Catch 2022</h1>
             <p>Shoot and avoid infinitely!</p>
         </div>
-        <div id="demo-wrapper" class="subwrapper">
+        <!-- Demo -->
+        <div id="demo" class="subwrapper">
             <h2>Video Demo</h2>
-            <video controls>
+            <!-- Sample video, replace with own demo video -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ"
+              frameborder="0" allow="accelerometer;
+              autoplay; clipboard-write;
+              encrypted-media; gyroscope;
+              picture-in-picture"
+              allowfullscreen>
+            </iframe>
+            <!--video controls>
               <source src="videotest.mp4" type="video/mp4">
-            </video>
-            
-            <div id="download-wrapper" class="subwrapper">
-              <h2>Download </h2>
+            </video-->
+        </div>
+        <!-- Download -->
+        <div id="download" class="subwrapper">
+          <h2>Download </h2>
+          <p>Available for Windows, MacOS, and Linux!</p>
+          <div id="download-buttons">
+            <!-- Windows download-->
             <a class="btn btn-dark btn-lg" href="XXXX" download>
-              Download 
+              <i class="fab fa-windows fa-3x"><span class="label"></span></i>
             </a>
-        <div id="screenshots-wrapper" class="subwrapper">
-            <h2>Screenshots</h2>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="1.jpg" class="d-block w-100" alt="...">
-                </div>
+            <!-- Mac download-->
+            <a class="btn btn-dark btn-lg" href="XXXX" download>
+              <i class="fab fa-apple fa-3x"><span class="label"></span></i>
+            </a>
+            <!-- Linux download-->
+            <a class="btn btn-dark btn-lg" href="XXXX" download>
+              <i class="fab fa-linux fa-3x"><span class="label"></span></i>
+            </a>
+          </div>
+        </div>
+        <!-- Screenshots -->
+        <div id="screenshots" class="subwrapper">
+          <h2>Screenshots</h2>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="...">
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+              <div class="carousel-item">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="1.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            
-              <h2>About</h2>
-            <div class="row text-center">
-            <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-            <i class="fas fa-eye fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading">XXXXXXXXXXXX</h4>
-            <p class="text-muted">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+        <!-- About -->
+        <div id="about" class="subwrapper">
+          <h2>About</h2>
+          <div id="feature-container">
+            <div class="about-feature">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-eye fa-stack-1x"></i>
+              </span>
+              <h4 class="service-heading">XXXXXXXXXXXX</h4>
+              <p class="text-details">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
             </div>
-            <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            
-            <i class="fas fa-gamepad fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">XXXXXXXXXXXXXXXXXXXXX</h4>
-          <p class="text-muted">XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-        </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-
-            <i class="fas fa-vial fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">XXXXXXXXXX</h4>
-          <p class="text-muted">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-        </div>
-      </div>
-    </div>
-  </section>
-              <p>Features and stuff</p>
-      </div>
-        <div id="team-wrapper" class="subwrapper">
-
-		<!-- Team -->
-  <section class="bg-color page-section" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase;">Team</h2>
-          
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="team-member">
-            <img style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px;"  src="Martin.jpg" alt="">
-            <p class="text-muted">Martin</p>
-            <p class="text-muted">Falke</p>
-            <p class="text-muted">Project leader</p>
-			<class="actions">
-			<i><a href="https://github.com/martinfalke" class="fab fa-github"><span class="label"></span></a></i>
-		
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div style="margin-left: -50px;" class="team-member">
-            <img style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px"  src="Boning.png" alt="">
-            <p class="text-muted">Boning</p>
-            <p class="text-muted">Li</p>
-            <p class="text-muted">XXXXX</p>
-			<class="actions">
-			<i><a href="https://github.com/Boningli23" class="fab fa-github"><span class="label"></span></a></i>
-          </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="team-member">
-            <img style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px"  src="Edvin.jpg" alt="">
-            <p class="text-muted">Edvin von</p>
-            <p class="text-muted">Platen</p>
-            <p class="text-muted">XXXXXX</p>
-			<class="actions">
-			<i><a href="https://github.com/edvinvp" class="fab fa-github"><span class="label"></span></a></i>
-          </div>
-        </div>
-        <div style="margin-left: 20px;" class="col-sm-2">
-          <div class="team-member">
-            <img style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px"  src="Elena.jpg" alt="">
-            <p class="text-muted">Elena</p>
-            <p class="text-muted">Palombini</p>
-            <p style="margin-left: 20px;" class="text-muted">XXXXX</p>
-			<class="actions">
-			<i><a href="https://github.com/elenapalombini" class="fab fa-github"><span class="label"></span></a></i>
-          </div>
-        </div>
-        <div style="margin-left: -20px;" class="col-sm-3">
-          <div class="team-member">
-            <img style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px"  src="Marius.jpg" alt="">
-            <p class="text-muted">Marius</p>
-            <p class="text-muted">Lelouard</p>
-            <p class="text-muted">XXXXX</p>
-			<class="actions">
-			<i><a href="https://github.com/MariusLelouard" class="fab fa-github"><span class="label"></span></a></i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="about-feature">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-gamepad fa-stack-1x"></i>
+              </span>
+              <h4 class="service-heading">XXXXXXXXXXXXXXXXXXXXX</h4>
+              <p class="text-details">XXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
             </div>
+            <div class="about-feature">
+              <span class="fa-stack fa-4x">
+                <i class="fas fa-vial fa-stack-1x"></i>
+              </span>
+              <h4 class="service-heading">XXXXXXXXXX</h4>
+              <p class="text-details">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            </div>
+          </div>
         </div>
-    </div>
+        <!-- Team -->
+        <div id="team" class="subwrapper">
+          <h2>Team</h2>
+          <div id="team-container">
+            <div class="team-member">
+              <img class="member-pic" style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px;"
+                src="Martin.jpg" alt="">
+              <p class="member-name">Martin</p>
+              <p class="member-name">Falke</p>
+              <p class="member-title">Project leader</p>
+              <class="actions">
+                <i><a target="_blank" href="https://github.com/martinfalke" class="fab fa-github fa-3x"><span class="label"></span></a></i>
+                <i><a target="_blank" href="https://linkedin.com/in/martinfalke" class="fab fa-linkedin fa-3x"><span class="label"></span></a></i>
+            </div>
+            <div class="team-member">
+              <img class="member-pic" style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px"
+                src="Boning.png" alt="">
+              <p class="member-name">Boning</p>
+              <p class="member-name">Li</p>
+              <p class="member-title">XXXXX</p>
+              <class="actions">
+                <i><a target="_blank" href="https://github.com/Boningli23" class="fab fa-github fa-3x"><span class="label"></span></a></i>
+                <i><a target="_blank" href="https://linkedin.com/in/boning-li-071834192/" class="fab fa-linkedin fa-3x"><span class="label"></span></a></i>
+            </div>
+            <div class="team-member">
+              <img class="member-pic" style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px" src="Edvin.jpg"
+                alt="">
+              <p class="member-name">Edvin</p>
+              <p class="member-name">von Platen</p>
+              <p class="member-title">XXXXXX</p>
+              <class="actions">
+                <i><a target="_blank" href="https://github.com/edvinvp" class="fab fa-github fa-3x"><span class="label"></span></a></i>
+            </div>
+            <div class="team-member">
+              <img class="member-pic" style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px" src="Elena.jpg"
+                alt="">
+              <p class="member-name">Elena</p>
+              <p class="member-name">Palombini</p>
+              <p class="member-title">XXXXX</p>
+              <class="actions">
+                <i><a target="_blank" href="https://github.com/elenapalombini" class="fab fa-github fa-3x"><span class="label"></span></a></i>
+                <i><a target="_blank" href="https://linkedin.com/in/elena-palombini" class="fab fa-linkedin fa-3x"><span class="label"></span></a></i>
+            </div>
+            <div class="team-member">
+              <img class="member-pic" style="height: 180px; width: 120px; padding-top: 15px; padding-bottom: 20px"
+                src="Marius.jpg" alt="">
+              <p class="member-name">Marius</p>
+              <p class="member-name">Lelouard</p>
+              <p class="member-title">XXXXX</p>
+              <class="actions">
+                <i><a target="_blank" href="https://github.com/MariusLelouard" class="fab fa-github fa-3x"><span class="label"></span></a></i>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Scripts -->
 

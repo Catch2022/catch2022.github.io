@@ -1,0 +1,32 @@
+/*! Catch2022 v1.0.0 | (c) 2020  | MIT License | git@github.com:Catch2022/Catch2022-Website */
+/* line 4, src/sass/download.scss */
+#download p {
+  color: #00D99E;
+}
+
+/* line 7, src/sass/download.scss */
+#download #download-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 30%;
+}
+
+/* line 13, src/sass/download.scss */
+#download #download-buttons .btn {
+  margin: 8px 16px;
+}
+
+/* line 15, src/sass/download.scss */
+#download #download-buttons .btn i {
+  color: #00D99E;
+}
