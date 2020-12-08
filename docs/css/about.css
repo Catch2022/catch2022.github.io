@@ -14,4 +14,19 @@
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
   color: #00D99E;
+  margin-top: -8px;
+}
+
+/* line 10, src/sass/about.scss */
+#feature-container .about-feature {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 0 5%;
+}
+
+/* line 13, src/sass/about.scss */
+#feature-container .about-feature .fa-stack {
+  line-height: 1.5;
+  height: 1.5em;
 }

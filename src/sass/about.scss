@@ -6,4 +6,17 @@
   justify-content: space-evenly;
   align-content: space-evenly;
   color: $secondary-color;
+  margin-top: -8px;
+  .about-feature{
+    flex: 1 1 50%;
+    padding: 0 5%;
+    .fa-stack{
+      line-height: 1.5;
+      height: 1.5em;
+    }
+    .feature-title{
+      // text below feature icons, h3
+    }
+  }
+
 }

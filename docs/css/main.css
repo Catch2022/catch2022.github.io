@@ -47,11 +47,29 @@
 /* line 13, src/sass/download.scss */
 #download #download-buttons .btn {
   margin: 8px 16px;
+  opacity: 0.8;
+  background-color: #1e1e1e;
+  border: none;
+  -webkit-transition: 0.3s opacity, background-color;
+  transition: 0.3s opacity, background-color;
 }
 
-/* line 15, src/sass/download.scss */
+/* line 20, src/sass/download.scss */
 #download #download-buttons .btn i {
-  color: #00D99E;
+  color: #aaaaaa;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+/* line 25, src/sass/download.scss */
+#download #download-buttons .btn:hover {
+  background-color: #2b2b2b;
+  opacity: 0.9;
+}
+
+/* line 29, src/sass/download.scss */
+#download #download-buttons .btn:hover i {
+  color: #e2b73b;
 }
 
 /* line 3, src/sass/about.scss */
@@ -69,6 +87,21 @@
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
   color: #00D99E;
+  margin-top: -8px;
+}
+
+/* line 10, src/sass/about.scss */
+#feature-container .about-feature {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  padding: 0 5%;
+}
+
+/* line 13, src/sass/about.scss */
+#feature-container .about-feature .fa-stack {
+  line-height: 1.5;
+  height: 1.5em;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -175,48 +208,59 @@
           flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0 25%;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  padding: 0 30%;
 }
 
-/* line 9, src/sass/team.scss */
+/* line 10, src/sass/team.scss */
 #team-container .team-member {
   display: grid;
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(6, auto) 1fr;
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 33%;
-          flex: 1 0 33%;
-  margin: 0 4px 12px;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+  margin: 0 24px 32px;
 }
 
-/* line 16, src/sass/team.scss */
+/* line 17, src/sass/team.scss */
 #team-container .team-member .member-pic {
   border-radius: 2.5rem;
-}
-
-/* line 19, src/sass/team.scss */
-#team-container .team-member .member-name {
-  color: #c115d8;
-  margin-bottom: 6px;
+  width: 120px;
+  height: 180px;
+  margin-bottom: .75rem;
 }
 
 /* line 23, src/sass/team.scss */
-#team-container .team-member .member-title {
-  color: #00D99E;
-  margin-top: 4px;
+#team-container .team-member .member-name {
+  color: #c115d8;
+  margin-top: -0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 /* line 28, src/sass/team.scss */
-#team-container .team-member i > a {
+#team-container .team-member .member-title {
+  color: #00D99E;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+/* line 34, src/sass/team.scss */
+#team-container .team-member .member-icons {
+  grid-row: -1 / span 1;
+  margin-top: 6px;
+}
+
+/* line 37, src/sass/team.scss */
+#team-container .team-member .member-icons i > a {
   color: #777;
 }
 
-/* line 31, src/sass/team.scss */
-#team-container .team-member i > a:hover {
-  color: #c4c4c4;
+/* line 40, src/sass/team.scss */
+#team-container .team-member .member-icons i > a:hover {
+  color: #D9AC2B;
   text-decoration: none;
 }
 
@@ -249,15 +293,16 @@ h1 {
 /* line 29, src/sass/main.scss */
 h2 {
   font-size: 3rem !important;
+  margin-bottom: 1rem !important;
 }
 
-/* line 33, src/sass/main.scss */
+/* line 34, src/sass/main.scss */
 .text-details {
-  color: #777;
+  color: #D9AC2B;
   font-size: 0.95rem;
 }
 
-/* line 39, src/sass/main.scss */
+/* line 40, src/sass/main.scss */
 #root-wrapper {
   background-image: url("../repeated-square-dark.png");
   color: #c115d8;
@@ -267,7 +312,7 @@ h2 {
 }
 
 @media only screen and (min-width: 701px) {
-  /* line 39, src/sass/main.scss */
+  /* line 40, src/sass/main.scss */
   #root-wrapper {
     grid-template-columns: 1fr 96vw 1fr;
     grid-template-rows: auto 100vh repeat(5, auto);
@@ -275,19 +320,36 @@ h2 {
 }
 
 @media only screen and (max-width: 700px) {
-  /* line 39, src/sass/main.scss */
+  /* line 40, src/sass/main.scss */
   #root-wrapper {
     grid-template: auto 100vh 100vh repeat(5, auto)/1fr 96vw 1fr;
   }
 }
 
-/* line 57, src/sass/main.scss */
+/* line 58, src/sass/main.scss */
 .subwrapper {
   padding: 92px 0px 48px 0px;
   margin-top: -44px;
 }
 
-/* line 62, src/sass/main.scss */
+/* line 63, src/sass/main.scss */
+.subwrapper::after {
+  position: relative;
+  content: "";
+  display: block;
+  width: 96vw;
+  height: 5px;
+  background-color: #00D99E;
+  bottom: -48px;
+  opacity: 0.05;
+}
+
+/* line 73, src/sass/main.scss */
+#team::after {
+  display: none;
+}
+
+/* line 78, src/sass/main.scss */
 #splash {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
@@ -308,32 +370,39 @@ h2 {
   color: #00D99E;
 }
 
-/* line 73, src/sass/main.scss */
+/* line 87, src/sass/main.scss */
+#splash .splash-filler {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+/* line 92, src/sass/main.scss */
 #demo {
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 78, src/sass/main.scss */
+/* line 97, src/sass/main.scss */
 #download {
   grid-row: 4 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 83, src/sass/main.scss */
+/* line 102, src/sass/main.scss */
 #about {
   grid-row: 5 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 88, src/sass/main.scss */
+/* line 107, src/sass/main.scss */
 #screenshots {
   grid-row: 6 / span 1;
   grid-column: 2 / span 1;
   display: grid;
 }
 
-/* line 94, src/sass/main.scss */
+/* line 113, src/sass/main.scss */
 #team {
   grid-row: 7 / span 1;
   grid-column: 2 / span 1;
@@ -346,7 +415,7 @@ h2 {
           flex-direction: column;
 }
 
-/* line 99, src/sass/main.scss */
+/* line 118, src/sass/main.scss */
 #team #team {
   display: -webkit-box;
   display: -ms-flexbox;

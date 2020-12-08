@@ -24,3 +24,9 @@
 .nav-link:hover {
     color: #e17cee !important;
 }
+
+
+
+.carousel {
+    margin: 0;
+}

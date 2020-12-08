@@ -28,6 +28,7 @@ h1{
 }
 h2{
     font-size: 3rem!important;
+    margin-bottom: 1rem!important;
 }
 
 .text-details {
@@ -58,6 +59,21 @@ h2{
     padding: 92px 0px 48px 0px;
     margin-top: -44px;
 }
+// lines to separate subwrappers
+.subwrapper::after{
+    position: relative;
+    content: "";
+    display: block;
+    width: 96vw;
+    height: 5px;
+    background-color: $secondary-color;
+    bottom: -48px;
+    opacity: 0.05;
+}
+#team::after{
+    display: none; // no line at the bottom of the page
+}
+
 
 #splash{
     grid-row: 2 / span 1;
@@ -68,6 +84,9 @@ h2{
     align-items: center;
     text-align: center;
     color: $secondary-color;
+    .splash-filler {
+        flex: 1 1 0;
+    }
 }
 
 #demo{
