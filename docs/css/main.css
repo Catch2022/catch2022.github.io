@@ -384,14 +384,14 @@ h2 {
   /* line 44, src/sass/main.scss */
   #root-wrapper {
     grid-template-columns: 1fr 96vw 1fr;
-    grid-template-rows: auto 100vh repeat(5, auto);
+    grid-template-rows: auto 100vh repeat(6, auto);
   }
 }
 
 @media only screen and (max-width: 767px) {
   /* line 44, src/sass/main.scss */
   #root-wrapper {
-    grid-template: auto 100vh repeat(5, auto)/1fr 96vw 1fr;
+    grid-template: auto 100vh repeat(6, auto)/1fr 96vw 1fr;
   }
 }
 
@@ -460,14 +460,31 @@ h2 {
   }
 }
 
-/* line 107, src/sass/main.scss */
+/* line 105, src/sass/main.scss */
+#demo #music-credit {
+  color: #00D99E;
+  font-size: 0.5rem;
+  opacity: 0.85;
+}
+
+/* line 109, src/sass/main.scss */
+#demo #music-credit a {
+  color: #D9AC2B;
+}
+
+/* line 111, src/sass/main.scss */
+#demo #music-credit a:hover {
+  color: #e5c56c;
+}
+
+/* line 118, src/sass/main.scss */
 #download {
   grid-row: 4 / span 1;
   grid-column: 2 / span 1;
   display: grid;
 }
 
-/* line 113, src/sass/main.scss */
+/* line 124, src/sass/main.scss */
 #about {
   grid-row: 5 / span 1;
   grid-column: 2 / span 1;
@@ -475,7 +492,7 @@ h2 {
   justify-items: center;
 }
 
-/* line 120, src/sass/main.scss */
+/* line 131, src/sass/main.scss */
 #screenshots {
   grid-row: 6 / span 1;
   grid-column: 1 / span 3;
@@ -485,7 +502,7 @@ h2 {
           justify-content: center;
 }
 
-/* line 127, src/sass/main.scss */
+/* line 138, src/sass/main.scss */
 #team {
   grid-row: 7 / span 1;
   grid-column: 2 / span 1;
@@ -498,7 +515,7 @@ h2 {
           flex-direction: column;
 }
 
-/* line 132, src/sass/main.scss */
+/* line 143, src/sass/main.scss */
 #team #team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,4 +530,40 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+/* line 151, src/sass/main.scss */
+#footer {
+  grid-row: 8 / span 1;
+  grid-column: 2 / span 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 32px 0 12px 0;
+}
+
+/* line 157, src/sass/main.scss */
+#footer #src-code {
+  font-size: 0.5rem;
+  opacity: 0.4;
+  color: #D9AC2B;
+  background-color: rgba(193, 21, 216, 0.2);
+  border-radius: 1rem;
+}
+
+/* line 163, src/sass/main.scss */
+#footer #src-code:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+/* line 169, src/sass/main.scss */
+#footer #src-code #src-txt {
+  padding: 24px 32px 20px;
+  margin-bottom: 0;
 }
