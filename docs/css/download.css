@@ -1,10 +1,18 @@
 /*! Catch2022 v1.0.0 | (c) 2020  | MIT License | git@github.com:Catch2022/Catch2022-Website */
 /* line 4, src/sass/download.scss */
 #download p {
+  justify-self: center;
   color: #00D99E;
 }
 
-/* line 7, src/sass/download.scss */
+@media screen and (min-width: 769px) {
+  /* line 4, src/sass/download.scss */
+  #download p {
+    max-width: 30vw;
+  }
+}
+
+/* line 11, src/sass/download.scss */
 #download #download-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,7 +29,7 @@
   padding: 0 30%;
 }
 
-/* line 13, src/sass/download.scss */
+/* line 17, src/sass/download.scss */
 #download #download-buttons .btn {
   margin: 8px 16px;
   opacity: 0.8;
@@ -31,20 +39,20 @@
   transition: 0.3s opacity, background-color;
 }
 
-/* line 20, src/sass/download.scss */
+/* line 24, src/sass/download.scss */
 #download #download-buttons .btn i {
   color: #aaaaaa;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
 
-/* line 25, src/sass/download.scss */
+/* line 29, src/sass/download.scss */
 #download #download-buttons .btn:hover {
   background-color: #2b2b2b;
   opacity: 0.9;
 }
 
-/* line 29, src/sass/download.scss */
+/* line 33, src/sass/download.scss */
 #download #download-buttons .btn:hover i {
   color: #e2b73b;
 }

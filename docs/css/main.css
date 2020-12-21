@@ -24,10 +24,18 @@
 
 /* line 4, src/sass/download.scss */
 #download p {
+  justify-self: center;
   color: #00D99E;
 }
 
-/* line 7, src/sass/download.scss */
+@media screen and (min-width: 769px) {
+  /* line 4, src/sass/download.scss */
+  #download p {
+    max-width: 30vw;
+  }
+}
+
+/* line 11, src/sass/download.scss */
 #download #download-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +52,7 @@
   padding: 0 30%;
 }
 
-/* line 13, src/sass/download.scss */
+/* line 17, src/sass/download.scss */
 #download #download-buttons .btn {
   margin: 8px 16px;
   opacity: 0.8;
@@ -54,25 +62,45 @@
   transition: 0.3s opacity, background-color;
 }
 
-/* line 20, src/sass/download.scss */
+/* line 24, src/sass/download.scss */
 #download #download-buttons .btn i {
   color: #aaaaaa;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
 }
 
-/* line 25, src/sass/download.scss */
+/* line 29, src/sass/download.scss */
 #download #download-buttons .btn:hover {
   background-color: #2b2b2b;
   opacity: 0.9;
 }
 
-/* line 29, src/sass/download.scss */
+/* line 33, src/sass/download.scss */
 #download #download-buttons .btn:hover i {
   color: #e2b73b;
 }
 
-/* line 3, src/sass/about.scss */
+/* line 4, src/sass/about.scss */
+#about-container {
+  margin-bottom: 2rem;
+  padding: 24px 32px 8px;
+  background-color: rgba(193, 21, 216, 0.15);
+  border-radius: 2rem;
+}
+
+/* line 5, src/sass/about.scss */
+#about-container p {
+  color: #00D99E !important;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 4, src/sass/about.scss */
+  #about-container {
+    max-width: 50vw;
+  }
+}
+
+/* line 20, src/sass/about.scss */
 #feature-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,18 +118,84 @@
   margin-top: -8px;
 }
 
-/* line 10, src/sass/about.scss */
+/* line 27, src/sass/about.scss */
 #feature-container .about-feature {
+  padding: 0 5%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  padding: 0 5%;
 }
 
-/* line 13, src/sass/about.scss */
+@media screen and (min-width: 769px) {
+  /* line 27, src/sass/about.scss */
+  #feature-container .about-feature {
+    max-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 27, src/sass/about.scss */
+  #feature-container .about-feature {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+/* line 36, src/sass/about.scss */
 #feature-container .about-feature .fa-stack {
   line-height: 1.5;
   height: 1.5em;
+}
+
+/* line 46, src/sass/about.scss */
+#gdd-container {
+  margin-top: 3rem;
+  padding: 24px 32px 8px;
+  background-color: rgba(193, 21, 216, 0.15);
+  border-radius: 2rem;
+}
+
+/* line 54, src/sass/about.scss */
+#gdd-container p {
+  justify-self: center;
+  color: #00D99E;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 54, src/sass/about.scss */
+  #gdd-container p {
+    max-width: 30vw;
+  }
+}
+
+/* line 61, src/sass/about.scss */
+#gdd-container .btn {
+  margin: 8px 16px;
+  padding: 12px 20px;
+  opacity: 0.8;
+  background-color: #1e1e1e;
+  border: none;
+  -webkit-transition: 0.3s opacity, background-color;
+  transition: 0.3s opacity, background-color;
+}
+
+/* line 69, src/sass/about.scss */
+#gdd-container .btn i {
+  color: #aaaaaa;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+/* line 74, src/sass/about.scss */
+#gdd-container .btn:hover {
+  background-color: #2b2b2b;
+  opacity: 0.9;
+}
+
+/* line 78, src/sass/about.scss */
+#gdd-container .btn:hover i {
+  color: #e2b73b;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -112,7 +206,7 @@
   margin-top: 3rem;
   margin-bottom: 10rem;
   width: 80rem;
-  max-width: 90vw;
+  max-width: 100vw;
   justify-self: center;
 }
 
@@ -135,66 +229,29 @@
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 40rem;
 }
 
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
-  /* line 36, src/sass/screenshots.scss */
+  /* line 35, src/sass/screenshots.scss */
   .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-  /* line 42, src/sass/screenshots.scss */
+  /* line 41, src/sass/screenshots.scss */
   .featurette-heading {
     font-size: 50px;
   }
 }
 
 @media (min-width: 62em) {
-  /* line 48, src/sass/screenshots.scss */
+  /* line 47, src/sass/screenshots.scss */
   .featurette-heading {
     margin-top: 7rem;
   }
-}
-
-/* Featurettes
-  ------------------------- */
-/* line 56, src/sass/screenshots.scss */
-.featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-/* line 61, src/sass/screenshots.scss */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-/* MARKETING CONTENT
-  -------------------------------------------------- */
-/* Center align the text within the three columns below the carousel */
-/* line 71, src/sass/screenshots.scss */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-/* line 75, src/sass/screenshots.scss */
-.marketing h2 {
-  font-weight: 400;
-}
-
-/* line 78, src/sass/screenshots.scss */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
 }
 
 /* line 4, src/sass/team.scss */
@@ -211,7 +268,7 @@
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  padding: 0 30%;
+  padding: 0 25%;
 }
 
 /* line 10, src/sass/team.scss */
@@ -220,9 +277,9 @@
   grid-template-rows: repeat(6, auto) 1fr;
   justify-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
-  margin: 0 24px 32px;
+      -ms-flex: 1 0 15%;
+          flex: 1 0 15%;
+  margin: 0 .75rem 32px;
 }
 
 /* line 17, src/sass/team.scss */
@@ -282,27 +339,35 @@ body {
   margin: 0;
   width: calc((var(--vw, 1vw) * 100));
   font-size: 1em;
-  font-family: 'Press Start 2P', cursive !important;
+  font-family: 'Press Start 2P', -apple-system, Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
-/* line 26, src/sass/main.scss */
-h1 {
-  font-size: 4.5rem !important;
+@media screen and (min-width: 768px) {
+  /* line 26, src/sass/main.scss */
+  h1 {
+    font-size: 4.5rem !important;
+  }
 }
 
-/* line 29, src/sass/main.scss */
+/* line 31, src/sass/main.scss */
 h2 {
-  font-size: 3rem !important;
   margin-bottom: 1rem !important;
 }
 
-/* line 34, src/sass/main.scss */
+@media screen and (min-width: 768px) {
+  /* line 31, src/sass/main.scss */
+  h2 {
+    font-size: 3rem !important;
+  }
+}
+
+/* line 38, src/sass/main.scss */
 .text-details {
   color: #D9AC2B;
   font-size: 0.95rem;
 }
 
-/* line 40, src/sass/main.scss */
+/* line 44, src/sass/main.scss */
 #root-wrapper {
   background-image: url("../repeated-square-dark.png");
   color: #c115d8;
@@ -311,28 +376,28 @@ h2 {
   display: grid;
 }
 
-@media only screen and (min-width: 701px) {
-  /* line 40, src/sass/main.scss */
+@media only screen and (min-width: 768px) {
+  /* line 44, src/sass/main.scss */
   #root-wrapper {
     grid-template-columns: 1fr 96vw 1fr;
     grid-template-rows: auto 100vh repeat(5, auto);
   }
 }
 
-@media only screen and (max-width: 700px) {
-  /* line 40, src/sass/main.scss */
+@media only screen and (max-width: 767px) {
+  /* line 44, src/sass/main.scss */
   #root-wrapper {
-    grid-template: auto 100vh 100vh repeat(5, auto)/1fr 96vw 1fr;
+    grid-template: auto 100vh repeat(5, auto)/1fr 96vw 1fr;
   }
 }
 
-/* line 58, src/sass/main.scss */
+/* line 62, src/sass/main.scss */
 .subwrapper {
   padding: 92px 0px 48px 0px;
   margin-top: -44px;
 }
 
-/* line 63, src/sass/main.scss */
+/* line 67, src/sass/main.scss */
 .subwrapper::after {
   position: relative;
   content: "";
@@ -344,12 +409,12 @@ h2 {
   opacity: 0.05;
 }
 
-/* line 73, src/sass/main.scss */
+/* line 77, src/sass/main.scss */
 #team::after {
   display: none;
 }
 
-/* line 78, src/sass/main.scss */
+/* line 82, src/sass/main.scss */
 #splash {
   grid-row: 2 / span 1;
   grid-column: 2 / span 1;
@@ -370,39 +435,53 @@ h2 {
   color: #00D99E;
 }
 
-/* line 87, src/sass/main.scss */
+/* line 91, src/sass/main.scss */
 #splash .splash-filler {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0;
 }
 
-/* line 92, src/sass/main.scss */
+/* line 96, src/sass/main.scss */
 #demo {
   grid-row: 3 / span 1;
   grid-column: 2 / span 1;
 }
 
-/* line 97, src/sass/main.scss */
-#download {
-  grid-row: 4 / span 1;
-  grid-column: 2 / span 1;
-}
-
-/* line 102, src/sass/main.scss */
-#about {
-  grid-row: 5 / span 1;
-  grid-column: 2 / span 1;
+@media only screen and (max-width: 767px) {
+  /* line 99, src/sass/main.scss */
+  #demo #video {
+    width: 336px !important;
+    height: 189px !important;
+  }
 }
 
 /* line 107, src/sass/main.scss */
-#screenshots {
-  grid-row: 6 / span 1;
+#download {
+  grid-row: 4 / span 1;
   grid-column: 2 / span 1;
   display: grid;
 }
 
 /* line 113, src/sass/main.scss */
+#about {
+  grid-row: 5 / span 1;
+  grid-column: 2 / span 1;
+  display: grid;
+  justify-items: center;
+}
+
+/* line 120, src/sass/main.scss */
+#screenshots {
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 3;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 127, src/sass/main.scss */
 #team {
   grid-row: 7 / span 1;
   grid-column: 2 / span 1;
@@ -415,7 +494,7 @@ h2 {
           flex-direction: column;
 }
 
-/* line 118, src/sass/main.scss */
+/* line 132, src/sass/main.scss */
 #team #team {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -20,14 +20,18 @@ body{
     margin: 0;
     width: calc((var(--vw, 1vw) * 100));
     font-size: 1em;
-    font-family: 'Press Start 2P', cursive !important;
+    font-family: 'Press Start 2P', -apple-system, Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
 }
 
 h1{
-    font-size: 4.5rem!important;
+    @media screen and (min-width: 768px) {
+        font-size: 4.5rem!important;
+    }
 }
 h2{
-    font-size: 3rem!important;
+    @media screen and (min-width: 768px) {
+        font-size: 3rem!important;
+    }
     margin-bottom: 1rem!important;
 }
 
@@ -46,12 +50,12 @@ h2{
 
 
     display: grid;
-    @media only screen and (min-width: 701px) {
+    @media only screen and (min-width: 768px) {
         grid-template-columns: 1fr 96vw 1fr;
         grid-template-rows: auto 100vh repeat(5, auto);
     }
-    @media only screen and (max-width: 700px) {
-        grid-template: auto 100vh 100vh repeat(5, auto) / 1fr 96vw 1fr;
+    @media only screen and (max-width: 767px) {
+        grid-template: auto 100vh repeat(5, auto) / 1fr 96vw 1fr;
     }
 }
 
@@ -92,22 +96,32 @@ h2{
 #demo{
     grid-row: 3 / span 1;
     grid-column: 2 / span 1;
+    #video{
+        @media only screen and (max-width: 767px){
+            width: 336px!important;
+            height: 189px!important;
+        }
+    }
 }
 
 #download{
     grid-row: 4 / span 1;
     grid-column: 2 / span 1;
+    display: grid;
 }
 
 #about{
     grid-row: 5 / span 1;
     grid-column: 2 / span 1;
+    display: grid;
+    justify-items: center;
 }
 
 #screenshots{
     grid-row: 6 / span 1;
-    grid-column: 2 / span 1;
+    grid-column: 1 / span 3;
     display: grid;
+    justify-content: center;
 }
 
 #team{

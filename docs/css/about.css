@@ -1,5 +1,25 @@
 /*! Catch2022 v1.0.0 | (c) 2020  | MIT License | git@github.com:Catch2022/Catch2022-Website */
-/* line 3, src/sass/about.scss */
+/* line 4, src/sass/about.scss */
+#about-container {
+  margin-bottom: 2rem;
+  padding: 24px 32px 8px;
+  background-color: rgba(193, 21, 216, 0.15);
+  border-radius: 2rem;
+}
+
+/* line 5, src/sass/about.scss */
+#about-container p {
+  color: #00D99E !important;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 4, src/sass/about.scss */
+  #about-container {
+    max-width: 50vw;
+  }
+}
+
+/* line 20, src/sass/about.scss */
 #feature-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,16 +37,82 @@
   margin-top: -8px;
 }
 
-/* line 10, src/sass/about.scss */
+/* line 27, src/sass/about.scss */
 #feature-container .about-feature {
+  padding: 0 5%;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  padding: 0 5%;
 }
 
-/* line 13, src/sass/about.scss */
+@media screen and (min-width: 769px) {
+  /* line 27, src/sass/about.scss */
+  #feature-container .about-feature {
+    max-width: 50vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* line 27, src/sass/about.scss */
+  #feature-container .about-feature {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+}
+
+/* line 36, src/sass/about.scss */
 #feature-container .about-feature .fa-stack {
   line-height: 1.5;
   height: 1.5em;
+}
+
+/* line 46, src/sass/about.scss */
+#gdd-container {
+  margin-top: 3rem;
+  padding: 24px 32px 8px;
+  background-color: rgba(193, 21, 216, 0.15);
+  border-radius: 2rem;
+}
+
+/* line 54, src/sass/about.scss */
+#gdd-container p {
+  justify-self: center;
+  color: #00D99E;
+}
+
+@media screen and (min-width: 769px) {
+  /* line 54, src/sass/about.scss */
+  #gdd-container p {
+    max-width: 30vw;
+  }
+}
+
+/* line 61, src/sass/about.scss */
+#gdd-container .btn {
+  margin: 8px 16px;
+  padding: 12px 20px;
+  opacity: 0.8;
+  background-color: #1e1e1e;
+  border: none;
+  -webkit-transition: 0.3s opacity, background-color;
+  transition: 0.3s opacity, background-color;
+}
+
+/* line 69, src/sass/about.scss */
+#gdd-container .btn i {
+  color: #aaaaaa;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+
+/* line 74, src/sass/about.scss */
+#gdd-container .btn:hover {
+  background-color: #2b2b2b;
+  opacity: 0.9;
+}
+
+/* line 78, src/sass/about.scss */
+#gdd-container .btn:hover i {
+  color: #e2b73b;
 }

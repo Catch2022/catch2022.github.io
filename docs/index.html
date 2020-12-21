@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Catch 2022</title>
+  <meta name="viewport" content="width=device-width" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -54,14 +54,14 @@
         <div id="splash" class="subwrapper">
             <div class="splash-filler"></div>
             <h1>Catch 2022</h1>
-            <p>Shoot and avoid infinitely!</p>
+            <p>Intense action in bullet hell!</p>
             <div class="splash-filler"></div>
         </div>
         <!-- Demo -->
         <div id="demo" class="subwrapper">
             <h2>Video Demo</h2>
             <!-- Sample video, replace with own demo video -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ"
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/LXb3EKWsInQ"
               frameborder="0" allow="accelerometer;
               autoplay; clipboard-write;
               encrypted-media; gyroscope;
@@ -75,46 +75,34 @@
         <!-- Download -->
         <div id="download" class="subwrapper">
           <h2>Download </h2>
-          <p>Available for Windows, MacOS, and Linux!</p>
+          <p>Download the .zip archive with the game demo for Windows PC now!</p>
           <div id="download-buttons">
             <!-- Windows download-->
             <a class="btn btn-dark btn-lg" href="XXXX" download>
               <i class="fab fa-windows fa-3x"><span class="label"></span></i>
-            </a>
-            <!-- Mac download-->
-            <a class="btn btn-dark btn-lg" href="XXXX" download>
-              <i class="fab fa-apple fa-3x"><span class="label"></span></i>
-            </a>
-            <!-- Linux download-->
-            <a class="btn btn-dark btn-lg" href="XXXX" download>
-              <i class="fab fa-linux fa-3x"><span class="label"></span></i>
             </a>
           </div>
         </div>
         <!-- About -->
         <div id="about" class="subwrapper">
           <h2>About</h2>
+          <div id="about-container">
+            <p class="text-details">A former employee enters the office building of Catch 2022. After decades of loyal work he was fired, as he was wrongfully accused of and blamed for stealing a co-worker's lunch. The CEO at the top floor was part of the decision, as well as the decision to make the elevators only move one floor at a time. Something has happened to the office objects though...</p>
+          </div>
           <div id="feature-container">
             <div class="about-feature">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-bolt fa-stack-1x"></i>
               </span>
               <h3 class="feature-title">Fast-paced Action</h3>
-              <p class="text-details">Experience combat with a high tempo and utilize your shoot, dash, and parry abilities to survive through hordes of enemies.</p>
+              <p class="text-details">Experience combat with a high tempo and utilize your shoot, dash, and parry abilities to survive through hordes of enemies. Proceed the levels with caution or your demise will be quick.</p>
             </div>
             <div class="about-feature">
               <span class="fa-stack fa-4x">
-                <i class="fas fa-medal fa-stack-1x"></i>
+                <i class="fas fa-trophy fa-stack-1x"></i>
               </span>
-              <h3 class="feature-title">Rank System</h3>
-              <p class="text-details">For every run you will receive a rank based on how fast you complete the levels and how many enemies you kill along the way. Improve and climb the ranks with diligence.</p>
-            </div>
-            <div class="about-feature">
-              <span class="fa-stack fa-4x">
-                <i class="fas fa-seedling fa-stack-1x"></i>
-              </span>
-              <h3 class="feature-title">Level Generation</h3>
-              <p class="text-details">Every level is randomly generated so each run is unique with a proprietary algorithm. The levels will keep being generated forever, unless you fall.</p>
+              <h3 class="feature-title">Time-based Score</h3>
+              <p class="text-details">To complete a level, you must kill all the enemies and then find the exit. For every run you will be scored based on how fast you complete the levels. Get faster completion to beat your own and your friends' scores!</p>
             </div>
             <div class="about-feature">
               <span class="fa-stack fa-4x">
@@ -123,6 +111,13 @@
               <h3 class="feature-title">Powerups</h3>
               <p class="text-details">Powerups are placed throughout the levels. Gather them and get buffs that help you wreak havoc on your enemies.</p>
             </div>
+          </div>
+          <div id="gdd-container">
+            <p>A full description of the game and all its aspects can be found in our Game Design Document.<br>Download it here.</p>
+            <h5 style="margin-bottom: 0">&lt;GDD&gt;</h5>
+            <a class="btn btn-dark btn-lg" href="XXXX" download>
+              <i class="fas fa-file-pdf fa-3x"><span class="label"></span></i>
+            </a>
           </div>
         </div>
         <!-- Screenshots -->
@@ -164,7 +159,8 @@
                 src="Martin.png" alt="">
               <p class="member-name">Martin</p>
               <p class="member-name">Falke</p>
-              <p class="member-title">Project Manager</p>
+              <p class="member-title">Project</p>
+              <p class="member-title">Manager</p>
               <div class="member-icons">
                 <i><a target="_blank" href="https://github.com/martinfalke" class="fab fa-github fa-3x"><span class="label"></span></a></i>
                 <i><a target="_blank" href="https://linkedin.com/in/martinfalke" class="fab fa-linkedin fa-3x"><span class="label"></span></a></i>
@@ -175,31 +171,32 @@
                 src="Boning.png" alt="">
               <p class="member-name">Boning</p>
               <p class="member-name">Li</p>
-              <p class="member-title">XXXXX</p>
+              <p class="member-title">Website</p>
+              <p class="member-title">Manager</p>
               <div class="member-icons">
                 <i><a target="_blank" href="https://github.com/Boningli23" class="fab fa-github fa-3x"><span class="label"></span></a></i>
                 <i><a target="_blank" href="https://linkedin.com/in/boning-li-071834192/" class="fab fa-linkedin fa-3x"><span class="label"></span></a></i>
               </div>
             </div>
             <div class="team-member">
-              <img class="member-pic" src="Edvin.jpg"
+              <img class="member-pic" src="Edvin.png"
                 alt="">
               <p class="member-name">Edvin</p>
               <p class="member-name">von Platen</p>
-              <p class="member-title">XXXXXX</p>
-              <p class="member-title">XXXXX</p>
+              <p class="member-title">Game</p>
+              <p class="member-title">Manager</p>
               <div class="member-icons">
                 <i><a target="_blank" href="https://github.com/edvinvp" class="fab fa-github fa-3x"><span class="label"></span></a></i>
                 <i><a target="_blank" href="https://www.linkedin.com/in/edvin-von-platen-03799aa2" class="fab fa-linkedin fa-3x"><span class="label"></span></a></i>
               </div>
             </div>
             <div class="team-member">
-              <img class="member-pic" src="Elena.jpg"
+              <img class="member-pic" src="Elena.png"
                 alt="">
               <p class="member-name">Elena</p>
               <p class="member-name">Palombini</p>
-              <p class="member-title">XXXXX</p>
-              <p class="member-title">XXXXX</p>
+              <p class="member-title">GDD</p>
+              <p class="member-title">Manager</p>
               <div class="member-icons">
                 <i><a target="_blank" href="https://github.com/elenapalombini" class="fab fa-github fa-3x"><span class="label"></span></a></i>
                 <i><a target="_blank" href="https://linkedin.com/in/elena-palombini" class="fab fa-linkedin fa-3x"><span class="label"></span></a></i>
@@ -207,10 +204,11 @@
             </div>
             <div class="team-member">
               <img class="member-pic"
-                src="Marius.jpg" alt="">
+                src="Marius.png" alt="">
               <p class="member-name">Marius</p>
               <p class="member-name">Lelouard</p>
-              <p class="member-title">XXXXX</p>
+              <p class="member-title">Art</p>
+              <p class="member-title">Director</p>
               <div class="member-icons">
                 <i><a target="_blank" href="https://github.com/MariusLelouard" class="fab fa-github fa-3x"><span class="label"></span></a></i>
               </div>
@@ -232,6 +230,8 @@
     <script src="js/main.js"></script>
     <!-- Nav.js -->
     <script src="js/nav.js"></script>
+    <!-- Screenshots.js -->
+    <script src="js/screenshots.js"></script>
   </body>
 
    <!-- Footer -->

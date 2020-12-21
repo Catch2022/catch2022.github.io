@@ -13,7 +13,7 @@
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  padding: 0 30%;
+  padding: 0 25%;
 }
 
 /* line 10, src/sass/team.scss */
@@ -22,9 +22,9 @@
   grid-template-rows: repeat(6, auto) 1fr;
   justify-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
-  margin: 0 24px 32px;
+      -ms-flex: 1 0 15%;
+          flex: 1 0 15%;
+  margin: 0 .75rem 32px;
 }
 
 /* line 17, src/sass/team.scss */
